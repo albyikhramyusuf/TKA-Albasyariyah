@@ -27,7 +27,8 @@
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
-    				<a class="navbar-brand" href="/frontend/fox/fox/index.html"> <span>TK ALBASYRIYAH</span></a>
+                    <img src="/frontend/fox/fox/images/LogoTKA.jpg" alt="" width="50px" height="50px">
+                    <h4 class="mb-4">TKA Al-Basyariyah</h4>
     			</div>
 	    		<div class="col-lg-8 d-block">
 		    		<div class="row d-flex">
@@ -73,7 +74,7 @@
 	        	<li class="nav-item active"><a href="/frontend/fox/fox/index.html" class="nav-link pl-0">Home</a></li>
 	        	<li class="nav-item"><a href="/frontend/fox/fox/Profil.html" class="nav-link">Profil</a></li>
 	        	<li class="nav-item"><a href="/frontend/fox/fox/Fasilitas.html" class="nav-link">Fasilitas</a></li>
-	        	<li class="nav-item"><a href="/frontend/fox/fox/Pendaftaran.html" class="nav-link">Pendaftaran</a></li>
+	        	<li class="nav-item"><a href="/frontend/fox/fox/    Pendaftaran.html" class="nav-link">Pendaftaran</a></li>
 	        	<li class="nav-item"><a href="/frontend/fox/fox/Gallery.html" class="nav-link">gallery</a></li>
 	          <li class="nav-item"><a href="/frontend/fox/fox/contact.html" class="nav-link">Contact</a></li>
 	        </ul>
@@ -84,13 +85,12 @@
 
     <section class="home-slider owl-carousel">
 
-      <div class="slider-item" style="background-image: url(/frontend/fox/fox/images/islamic.jpg);">
-      	<div class="overlay"></div>
+      <div class="slider-item" style="background-image: url(/frontend/fox/fox/images/TKA.jpg);">
         <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 ftco-animate">
-            <h1 class="mb-4">Selamat Datang Di Tk Albasyariyah</h1>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <div class="row">
+        <div class="col-lg-10 text-white" style="margin-top:300px; margin-left:240px;">
+                <h1>Selamat Datang Di TKA Albasyariyah</h1>
+                <h4>MENERIMA SISWA-SISWI BARU</h4>
           </div>
         </div>
         </div>

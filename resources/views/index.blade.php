@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tk Albasyariyah</title>
+    <title>TKA AL BASYARIYAH</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -95,7 +95,9 @@
         </div>
         </div>
       </div>
-    </section>
+	</section>
+
+	<center><h2>AGENDA</h2></center>
 
     <section class="ftco-services ftco-no-pb">
 			<div class="container-wrap">
@@ -103,44 +105,42 @@
           <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-teacher"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Certified Teachers</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
+					<span><img src="/frontend/fox/fox/images/gambar.jpg" alt="" width="100%" height="100%"></span>
+				</div>
+				<div class="media-body p-2 mt-3">
+						<h3 class="heading">Menggambar</h3>
+				</div>
+
+
+			</div>
           </div>
           <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-reading"></span>
+					<span><img src="/frontend/fox/fox/images/mewarnai.jpg" alt="" width="100%" height="100%"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Special Education</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <h3 class="heading">Mewarnai</h3>
               </div>
             </div>
           </div>
           <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-books"></span>
+            		<span><img src="/frontend/fox/fox/images/olahraga.jpg" alt="" width="100%" height="100%"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Book &amp; Library</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <h3 class="heading">Senam Sehat</h3>
               </div>
             </div>
           </div>
           <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-diploma"></span>
+            		<span><img src="/frontend/fox/fox/images/belajar.jpg" alt="" width="100%" height="100%"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Sport Clubs</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <h3 class="heading">Belajar</h3>
               </div>
             </div>
           </div>
@@ -155,14 +155,14 @@
 						<div class="img" style="background-image: url(images/about.jpg); border"></div>
 					</div>
 					<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
-          	<h2 class="mb-4">What We Offer</h2>
+          	<h2 class="mb-4">Fasilitas</h2>
 						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
 						<div class="row mt-5">
 							<div class="col-lg-6">
 								<div class="services-2 d-flex">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-security"></span></div>
 									<div class="text pl-3">
-										<h3>Safety First</h3>
+										<h3>Taman Bermain</h3>
 										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
 									</div>
 								</div>
@@ -171,7 +171,7 @@
 								<div class="services-2 d-flex">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-reading"></span></div>
 									<div class="text pl-3">
-										<h3>Regular Classes</h3>
+										<h3>Mesjid</h3>
 										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
 									</div>
 								</div>
@@ -180,7 +180,7 @@
 								<div class="services-2 d-flex">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-diploma"></span></div>
 									<div class="text pl-3">
-										<h3>Certified Teachers</h3>
+										<h3>Perpustakaan</h3>
 										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
 									</div>
 								</div>
@@ -189,7 +189,7 @@
 								<div class="services-2 d-flex">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-education"></span></div>
 									<div class="text pl-3">
-										<h3>Sufficient Classrooms</h3>
+										<h3>Kelas Ber-AC</h3>
 										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
 									</div>
 								</div>

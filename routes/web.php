@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/profil', function () {
+    return view('Profil');
+});
+
 
 
 

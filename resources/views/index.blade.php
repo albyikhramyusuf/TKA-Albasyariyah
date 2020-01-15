@@ -151,7 +151,7 @@
 			<div class="container">
 				<div class="row d-flex">
 					<div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
-						<div class="img" style="background-image: url(/frontend/fox/fox/images/about.jpg); border"></div>
+						<div class="img" style="background-image: url(images/about.jpg); border"></div>
 					</div>
 					<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
           	<h2 class="mb-4">Visi Dan Misi</h2>
@@ -193,28 +193,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-jigsaw"></span></div>
-									<div class="text pl-3">
-										<h3>Creative Lessons</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-kids"></span></div>
-									<div class="text pl-3">
-										<h3>Sports Facilities</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
 		</section>
 
 		<section class="ftco-section">
@@ -667,6 +646,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
           <div class="col-md-6 col-lg-3">

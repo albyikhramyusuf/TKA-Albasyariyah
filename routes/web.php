@@ -19,6 +19,9 @@ Route::get('/profil', function () {
     return view('Profil');
 });
 
+Route::get('/fasilitas', function () {
+    return view('fasilitas');
+});
 
 
 

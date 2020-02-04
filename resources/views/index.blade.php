@@ -44,14 +44,6 @@
 						    	<span>Call</span>
 						    	<span>Call Us: + 1235 2355 98</span>
 						    </div>
-					    </div>
-					    <div class="col-md topper d-flex align-items-center justify-content-end">
-					    	<p class="mb-0">
-					    		<a href="/frontend/fox/fox/#" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
-					    			<span>Apply now</span>
-					    		</a>
-					    	</p>
-					    </div>
 				    </div>
 			    </div>
 		    </div>
@@ -73,7 +65,7 @@
 	        	<li class="nav-item active"><a href="{{url('Home')}}" class="nav-link pl-0">Home</a></li>
             <li class="nav-item"><a href="{{url('profil')}}" class="nav-link">Profil</a></li>
 	        	<li class="nav-item"><a href="{{url('Fasilitas')}}" class="nav-link">Fasilitas</a></li>
-	        	<li class="nav-item"><a href="/frontend/fox/fox/    Pendaftaran.html" class="nav-link">Pendaftaran</a></li>
+	        	<li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBR0QXfetxdBvFlR-Y6JSwzdj6GPxL4FoDdluIROlSeLIsOQ/viewform?usp=sf_link" class="nav-link">Pendaftaran</a></li>
 	        	<li class="nav-item"><a href="/frontend/fox/fox/Gallery.html" class="nav-link">gallery</a></li>
 	          <li class="nav-item"><a href="/frontend/fox/fox/contact.html" class="nav-link">Contact</a></li>
 	        </ul>
@@ -84,12 +76,11 @@
 
     <section class="home-slider owl-carousel">
 
-      <div class="slider-item" style="background-image: url(/frontend/fox/fox/images/TKA.jpg);">
+      <div class="slider-item" style="background-image: url(/frontend/fox/fox/images/tka.jpg);">
         <div class="container">
         <div class="row">
         <div class="col-lg-10 text-white" style="margin-top:300px; margin-left:240px;">
-                <h1>Selamat Datang Di TKA Albasyariyah</h1>
-                <h4>MENERIMA SISWA-SISWI BARU</h4>
+
           </div>
         </div>
         </div>

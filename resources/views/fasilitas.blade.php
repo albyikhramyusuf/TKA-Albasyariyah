@@ -73,7 +73,7 @@
 	        	<li class="nav-item"><a href="{{url('/')}}" class="nav-link pl-0">Home</a></li>
 	        	<li class="nav-item"><a href="{{url('/profil')}}" class="nav-link">Profil</a></li>
 	        	<li class="nav-item active"><a href="{{url('/fasilitas')}}" class="nav-link">Fasilitas</a></li>
-	        	<li class="nav-item"><a href="{{url('/pendaftaran')}}" class="nav-link">Pendaftaran</a></li>
+	        	<li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBR0QXfetxdBvFlR-Y6JSwzdj6GPxL4FoDdluIROlSeLIsOQ/viewform?usp=sf_link" class="nav-link">Pendaftaran</a></li>
 	        	<li class="nav-item"><a href="{{url('/gallery')}}" class="nav-link">Gallery</a></li>
 	          <li class="nav-item"><a href="{{url('/contact')}}" class="nav-link">Contact</a></li>
 	        </ul>
@@ -82,7 +82,7 @@
 	  </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('/frontend/fox/fox/images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('/frontend/fox/fox/images/tka.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">

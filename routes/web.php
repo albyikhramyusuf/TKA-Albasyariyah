@@ -23,6 +23,10 @@ Route::get('/fasilitas', function () {
     return view('fasilitas');
 });
 
+Route::get('/gallery', function () {
+    return view('gallery');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

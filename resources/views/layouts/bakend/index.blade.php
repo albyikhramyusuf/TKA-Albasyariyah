@@ -135,7 +135,7 @@
           <li class="breadcrumb-item active">Overview</li>
         </ol>
 
-
+@yield('content')
         <!-- DataTables Example -->
 
       <!-- /.container-fluid -->

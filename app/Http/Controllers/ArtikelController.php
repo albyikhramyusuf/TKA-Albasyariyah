@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Artikel;
 use App\Tag;
 use App\User;
+use App\Kategori;
 use Illuminate\Support\Facades\File;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Auth;
@@ -32,7 +33,11 @@ class ArtikelController extends Controller
      */
     public function create()
     {
-
+        $artikel = Artikel::all();
+        $tag = Tag::all();
+        $kategori = Kategori::all();
+        // dd($tag);
+        return view('backend.artikel.create', compact('kategori', 'tag'));
     }
 
     /**

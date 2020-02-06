@@ -15,8 +15,8 @@ class Agenda extends Migration
     {
         Schema::create('agenda', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama_agenda');
             $table->string('foto');
+            $table->string('nama_agenda');
             $table->timestamps();
         });
     }

@@ -7,6 +7,7 @@
             <div class="card">
                 <h5 class="card-header">Data Artikel</h5><br>
                 <center>
+                    <p></p>
                         <a href="{{ route('artikel.create') }}"
                             class="la la-cloud-upload btn btn-info btn-rounded btn-floating btn-outline">&nbsp;Tambah Data
                         </a>
@@ -15,19 +16,16 @@
                     <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Judul</th>
-                                <th>Slug</th>
-                                <th>Tag</th>
-                                <th>Kategori</th>
-                                <th>Penulis</th>
                                 <th>Foto</th>
+                                <th>Nama_guru</th>
+                                <th>Jabatan</th>
                                 <th style="text-align: center;">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($artikel as $data)
                             <tr>
-                                <td>{{$data->judul}}</td>
+                                <td>{{$data->foto}}</td>
                                 <td>{{$data->slug}}</td>
                                  <td>
                                     @foreach ($data->tag as $tag)

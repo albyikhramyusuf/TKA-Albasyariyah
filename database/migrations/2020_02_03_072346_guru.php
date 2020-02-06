@@ -15,12 +15,9 @@ class Guru extends Migration
     {
         Schema::create('guru', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('foto');
             $table->string('nama_guru');
-            $table->string('tempat_tinggal');
-            $table->date('tanggal_lahir');
-            $table->integer('no_telpon');
-            $table->integer('email');
-            $table->string('password');
+            $table->string('jabatan');
             $table->timestamps();
         });
     }

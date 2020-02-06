@@ -39,5 +39,6 @@ function () {
         return view ('admin.index');
     });
     Route::resource('/artikel','ArtikelController');
+    Route::resource('/tag','TagController');
 
 });

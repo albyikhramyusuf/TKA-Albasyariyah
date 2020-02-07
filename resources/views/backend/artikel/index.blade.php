@@ -16,9 +16,12 @@
                     <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
+                                <th>Judul</th>
+                                <th>Slug</th>
+                                <th>Tag</th>
+                                <th>Kategori</th>
+                                <th>Penulis</th>
                                 <th>Foto</th>
-                                <th>Nama_guru</th>
-                                <th>Jabatan</th>
                                 <th style="text-align: center;">Aksi</th>
                             </tr>
                         </thead>

@@ -40,5 +40,6 @@ function () {
     });
     Route::resource('/artikel','ArtikelController');
     Route::resource('/tag','TagController');
+    Route::resource('/guru','GuruController');
 
 });

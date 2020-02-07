@@ -13,7 +13,7 @@ class Guru extends Migration
      */
     public function up()
     {
-        Schema::create('guru', function (Blueprint $table) {
+        Schema::create('gurus', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('foto');
             $table->string('nama_guru');
@@ -29,6 +29,6 @@ class Guru extends Migration
      */
     public function down()
     {
-        //
+
     }
 }

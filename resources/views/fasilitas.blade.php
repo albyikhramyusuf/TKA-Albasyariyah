@@ -45,10 +45,7 @@
 						    	<span>Call Us: + 1235 2355 98</span>
 						    </div>
 					    </div>
-					    <div class="col-md topper d-flex align-items-center justify-content-end">
-					    	<p class="mb-0">
-					    		<a href="/frontend/fox/fox/#" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
-					    			<span>Apply now</span>
+
 					    		</a>
 					    	</p>
 					    </div>
@@ -83,12 +80,12 @@
     <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('/frontend/fox/fox/images/tka.jpg');">
-      <div class="overlay"></div>
+
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">Fasilitas</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="/frontend/fox/fox/index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Fasilitas <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-2 bread" style="color:black">Fasilitas</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="/frontend/fox/fox/index.html" style="color:black">Home <i class="ion-ios-arrow-forward"></i></a></span> <span style="color:black">Fasilitas <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
@@ -137,13 +134,14 @@
 
 
 						</div>
-					</div>
+                    </div>
+				</div>
 
 
 
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row mb-5">
           <div class="col-md-6 col-lg-3">
             <div class="ftco-footer-widget mb-5">

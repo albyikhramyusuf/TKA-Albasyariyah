@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Guru;
+use App\Fasilitas;
 use Illuminate\Support\Facades\File;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Session;
 use Illuminate\Support\Str;
 
-class GuruController extends Controller
+class FasilitasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,9 +18,9 @@ class GuruController extends Controller
      */
     public function index()
     {
-        $guru = Guru::all();
+        $fasilitas = Fasilitas::all();
 
-        return view('backend.guru.index', compact('guru'));
+        return view('backend.fasilitas.index', compact('fasilitas'));
     }
 
     /**
@@ -30,8 +30,8 @@ class GuruController extends Controller
      */
     public function create()
     {
-        $guru = Guru::all();
-        return view('backend.guru.create', compact('guru'));
+        $fasilitas = Fasilitas::all();
+        return view('backend.fasilitas.create', compact('fasilitas'));
     }
 
     /**
@@ -42,27 +42,24 @@ class GuruController extends Controller
      */
     public function store(Request $request)
     {
-        $guru = new Guru;
-        $guru->foto = $request->foto;
-        $guru->nama_guru = $request->nama_guru;
-        $guru->jabatan = $request->jabatan;
-
+        $fasilitas = new Fasilitas;
+        $fasilitas->foto = $request->foto;
+        $fasilitas->nama_fasilitas = $request->nama_fasilitas;
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
-            $destinationPath = public_path() . '/assets/img/guru/';
+            $destinationPath = public_path() . '/assets/img/fasilitas/';
             $filename = Str::random(6) . '_' . $file->getClientOriginalName();
             $upload = $file->move($destinationPath, $filename);
 
-            $guru->foto = $filename;
+            $fasilitas->foto = $filename;
         }
 
-        $guru->save();
+        $fasilitas->save();
         Session::flash("flash_notification", [
             "level" => "success",
-            "message" => "Berhasil menyimpan data guru bernama <b>$guru->foto</b>!"
+            "message" => "Berhasil menyimpan data guru bernama <b>$fasilitas->foto</b>!"
         ]);
-        return redirect()->route('guru.index');
-
+        return redirect()->route('fasilitas.index');
     }
 
     /**
@@ -107,11 +104,11 @@ class GuruController extends Controller
      */
     public function destroy($id)
     {
-        $guru = Guru::findOrfail($id)->delete();
+        $fasilitas = Fasilitas::findOrfail($id)->delete();
         Session::flash("flash_notification",[
              "level" => "Success",
              "message" => "Berhasil menghapus<b>"
          ]);
-        return redirect()->route('guru.index');
+        return redirect()->route('fasilitas.index');
     }
 }

@@ -45,10 +45,8 @@
 						    	<span>Call Us: + 1235 2355 98</span>
 						    </div>
 					    </div>
-					    <div class="col-md topper d-flex align-items-center justify-content-end">
-					    	<p class="mb-0">
-					    		<a href="/frontend/fox/fox/#" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
-					    			<span>Apply now</span>
+
+
 					    		</a>
 					    	</p>
 					    </div>
@@ -83,12 +81,12 @@
     <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url(/frontend/fox/fox/images/tka.jpg);">
-      <div class="overlay"></div>
+
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">Profil</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="/frontend/fox/fox/index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-2 bread" style="color:black">Profil</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="/frontend/fox/fox/index.html" style="color:black">Home <i class="ion-ios-arrow-forward"></i></a></span> <span style="color:black">About us <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
@@ -119,15 +117,15 @@
 			</div>
 		</section>
 
-
-
-
     <section class="ftco-section testimony-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
 
           </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -161,14 +159,14 @@
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
-					</div>
-        </div>
+                    </div>
+            </div>
     	</div>
-    </section>
+
 
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row mb-5">
           <div class="col-md-6 col-lg-3">
             <div class="ftco-footer-widget mb-5">

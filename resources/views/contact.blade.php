@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TKA AL BASYARIYAH</title>
+    <title>TK AL BASYARIYAH</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -27,7 +27,7 @@
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
-    				<img src="/frontend/fox/fox/images/LogoTKA.jpg" alt="" height="100px">
+                        <img src="/frontend/fox/fox/images/LogoTKA.jpg" alt="" height="100px">
     			</div>
 	    		<div class="col-lg-8 d-block">
 		    		<div class="row d-flex">
@@ -45,6 +45,7 @@
 						    	<span>Call Us: + 1235 2355 98</span>
 						    </div>
 					    </div>
+
 					    		</a>
 					    	</p>
 					    </div>
@@ -67,11 +68,11 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
 	        	<li class="nav-item"><a href="{{url('/')}}" class="nav-link pl-0">Home</a></li>
-	        	<li class="nav-item"><a href="{{url('/profil')}}" class="nav-link">Profil</a></li>
+	        	<li class="nav-item"><a href="{{url('/profil')}}" class="nav-link">Frofil</a></li>
 	        	<li class="nav-item"><a href="{{url('/fasilitas')}}" class="nav-link">Fasilitas</a></li>
 	        	<li class="nav-item"><a href="{{url('https://docs.google.com/forms/d/e/1FAIpQLScBR0QXfetxdBvFlR-Y6JSwzdj6GPxL4FoDdluIROlSeLIsOQ/viewform?usp=sf_link')}}" class="nav-link">Pendaftaran</a></li>
-	        	<li class="nav-item active"><a href="{{url('/gallery')}}" class="nav-link">Gallery</a></li>
-	          <li class="nav-item"><a href="{{url('/contact')}}" class="nav-link">Contact</a></li>
+	        	<li class="nav-item"><a href="{{url('/gallery')}}" class="nav-link">Gallery</a></li>
+	          <li class="nav-item active"><a href="{{url('/contact')}}" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -83,153 +84,74 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread" style="color:black">Gallery</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="/frontend/fox/fox/index.html "style="color:black">Home <i class="ion-ios-arrow-forward"></i></a></span> <span style="color:black">Gallery <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-2 bread" style="color:black">Contact Us</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="/frontend/fox/fox/index.html" style="color:black">Home <i class="ion-ios-arrow-forward"></i></a></span> <span style="color:black">Contact <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
     </section>
 
-
-		<section class="ftco-section bg-light">
-			<div class="container">
-				<div class="row">
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_1.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="/frontend/fox/fox/#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="/frontend/fox/fox/#" class="mr-2">Admin</a>
-	                	<a href="/frontend/fox/fox/#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
+    <section class="ftco-section contact-section">
+      <div class="container">
+        <div class="row d-flex contact-info">
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box p-4 text-center">
+          		<h3 class="mb-4">Address</h3>
+	            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+	          </div>
           </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_2.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="/frontend/fox/fox/#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="/frontend/fox/fox/#" class="mr-2">Admin</a>
-	                	<a href="/frontend/fox/fox/#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box p-4 text-center">
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="/frontend/fox/fox/tel://1234567920">+ 1235 2355 98</a></p>
+	          </div>
           </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_3.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="/frontend/fox/fox/#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="/frontend/fox/fox/#" class="mr-2">Admin</a>
-	                	<a href="/frontend/fox/fox/#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box p-4 text-center">
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="/frontend/fox/fox/mailto:info@yoursite.com">info@yoursite.com</a></p>
+	          </div>
           </div>
-
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_4.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="/frontend/fox/fox/#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="/frontend/fox/fox/#" class="mr-2">Admin</a>
-	                	<a href="/frontend/fox/fox/#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_5.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="/frontend/fox/fox/#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="/frontend/fox/fox/#" class="mr-2">Admin</a>
-	                	<a href="/frontend/fox/fox/#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_6.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">26</span>
-                  <span class="mos">June</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="/frontend/fox/fox/#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="/frontend/fox/fox/#" class="mr-2">Admin</a>
-	                	<a href="/frontend/fox/fox/#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box p-4 text-center">
+          		<h3 class="mb-4">Website</h3>
+	            <p><a href="/frontend/fox/fox/#">yoursite.com</a></p>
+	          </div>
           </div>
         </div>
+      </div>
+    </section>
+
+		<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+			<div class="container">
+				<div class="row d-flex align-items-stretch no-gutters">
+					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
+						<form action="#">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div id="map"></div>
+					</div>
+				</div>
 			</div>
 		</section>
+
+
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -250,7 +172,7 @@
             <div class="ftco-footer-widget mb-5">
               <h2 class="ftco-heading-2">Recent Blog</h2>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url(/frontend/fox/fox/images/image_1.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="/frontend/fox/fox/#">Even the all-powerful Pointing has no control about</a></h3>
                   <div class="meta">
@@ -261,7 +183,7 @@
                 </div>
               </div>
               <div class="block-21 mb-5 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url(/frontend/fox/fox/images/image_2.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="/frontend/fox/fox/#">Even the all-powerful Pointing has no control about</a></h3>
                   <div class="meta">

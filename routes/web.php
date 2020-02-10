@@ -27,6 +27,10 @@ Route::get('/gallery', function () {
     return view('gallery');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -41,5 +45,5 @@ function () {
     Route::resource('/artikel','ArtikelController');
     Route::resource('/tag','TagController');
     Route::resource('/guru','GuruController');
-
+    Route::resource('/fasilitas','FasilitasController');
 });

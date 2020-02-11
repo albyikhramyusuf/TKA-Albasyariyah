@@ -90,15 +90,15 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
-      <a class="nav-link" href="{{url('/admin')}}">
+      <a class="nav-link" href="{{route('guru.index')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
+          <span>Guru</span>
         </a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="/admin/startbootstrap-sb-admin-gh-pages/#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="{{route('fasilitas.index')}}" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
+          <span>Fasilitas</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">Login Screens:</h6>
@@ -112,14 +112,14 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/admin/startbootstrap-sb-admin-gh-pages/charts.html">
+        <a class="nav-link" href="{{route('artikel.index')}}">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
+          <span>Artikel</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/admin/startbootstrap-sb-admin-gh-pages/tables.html">
+        <a class="nav-link" href="{{route('tag.index')}}">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Tag</span></a>
       </li>
     </ul>
 

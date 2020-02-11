@@ -84,7 +84,8 @@ class GuruController extends Controller
      */
     public function edit($id)
     {
-        //
+        $guru = Guru::findOrFail($id);
+        return view('backend.guru.edit', compact('guru'));
     }
 
     /**
@@ -96,7 +97,25 @@ class GuruController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $guru = Guru::findOrFail($id);
+        $guru->foto = $request->foto;
+        $guru->nama_guru = $request->nama_guru;
+        $guru->jabatan = $request->jabatan;
+
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $destinationPath = public_path() . '/assets/img/guru/';
+            $filename = Str::random(40) . '_' . $file->getClientOriginalName();
+            $uploadSuccess = $file->move($destinationPath, $filename);
+            $guru->foto = $filename;
+        }
+
+        $guru->save();
+        Session::flash("flash_notification", [
+            "level" => "success",
+            "message" => "Berhasil menyimpan</b>!"
+        ]);
+        return redirect()->route('guru.index');
     }
 
     /**

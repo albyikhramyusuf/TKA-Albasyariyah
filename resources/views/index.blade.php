@@ -27,7 +27,7 @@
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
-                    <img src="/frontend/fox/fox/images/LogoTKA.jpg" alt="" height="100px">
+                    <img src="/frontend/fox/fox/images/LogoTKA.jpg" alt="" height="130px">
     			</div>
 	    		<div class="col-lg-8 d-block">
 		    		<div class="row d-flex">

@@ -69,7 +69,7 @@
 	        <ul class="navbar-nav mr-auto">
 	        	<li class="nav-item"><a href="{{url('/')}}" class="nav-link pl-0">Home</a></li>
 	        	<li class="nav-item"><a href="{{url('/profil')}}" class="nav-link">Profil</a></li>
-	        	<li class="nav-item active"><a href="{{url('/fasilitas')}}" class="nav-link">Fasilitas</a></li>
+	        	<li class="nav-item"><a href="{{url('/fasilitas')}}" class="nav-link">Fasilitas</a></li>
 	        	<li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBR0QXfetxdBvFlR-Y6JSwzdj6GPxL4FoDdluIROlSeLIsOQ/viewform?usp=sf_link" class="nav-link">Pendaftaran</a></li>
 	        	<li class="nav-item"><a href="{{url('/gallery')}}" class="nav-link">Gallery</a></li>
 	          <li class="nav-item"><a href="{{url('/contact')}}" class="nav-link">Contact</a></li>
@@ -92,7 +92,7 @@
     </section>
 
     <section class="ftco-section">
-			<div class="container-fluid px-4">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-3 course ftco-animate">
 						<div class="img" style="background-image: url(/frontend/fox/fox/images/tamanbermain.jpg);"></div>

@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Fasilitas;
+use App\Agenda;
 use Illuminate\Support\Facades\File;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Session;
 use Illuminate\Support\Str;
 
-class FasilitasController extends Controller
+class AgendaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +18,8 @@ class FasilitasController extends Controller
      */
     public function index()
     {
-        $fasilitas = Fasilitas::all();
-        return view('backend.fasilitas.index', compact('fasilitas'));
+        $agenda = Agenda::all();
+        return view('backend.agenda.index', compact('agenda'));
     }
 
     /**
@@ -29,8 +29,7 @@ class FasilitasController extends Controller
      */
     public function create()
     {
-        $fasilitas = Fasilitas::all();
-        return view('backend.fasilitas.create', compact('fasilitas'));
+        //
     }
 
     /**
@@ -41,24 +40,7 @@ class FasilitasController extends Controller
      */
     public function store(Request $request)
     {
-        $fasilitas = new Fasilitas;
-        $fasilitas->foto = $request->foto;
-        $fasilitas->nama_fasilitas = $request->nama_fasilitas;
-        if ($request->hasFile('foto')) {
-            $file = $request->file('foto');
-            $destinationPath = public_path() . '/assets/img/fasilitas/';
-            $filename = Str::random(6) . '_' . $file->getClientOriginalName();
-            $upload = $file->move($destinationPath, $filename);
-
-            $fasilitas->foto = $filename;
-        }
-
-        $fasilitas->save();
-        Session::flash("flash_notification", [
-            "level" => "success",
-            "message" => "Berhasil menyimpan data guru bernama <b>$fasilitas->foto</b>!"
-        ]);
-        return redirect()->route('fasilitas.index');
+        //
     }
 
     /**
@@ -103,11 +85,6 @@ class FasilitasController extends Controller
      */
     public function destroy($id)
     {
-        $fasilitas = Fasilitas::findOrfail($id)->delete();
-        Session::flash("flash_notification",[
-             "level" => "Success",
-             "message" => "Berhasil menghapus<b>"
-         ]);
-        return redirect()->route('fasilitas.index');
+        //
     }
 }

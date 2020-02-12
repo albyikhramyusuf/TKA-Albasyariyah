@@ -46,4 +46,5 @@ function () {
     Route::resource('/tag','TagController');
     Route::resource('/guru','GuruController');
     Route::resource('/fasilitas','FasilitasController');
+    Route::resource('/agenda','AgendaController');
 });

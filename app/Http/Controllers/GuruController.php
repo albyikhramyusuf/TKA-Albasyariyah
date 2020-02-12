@@ -108,6 +108,17 @@ class GuruController extends Controller
             $filename = Str::random(40) . '_' . $file->getClientOriginalName();
             $uploadSuccess = $file->move($destinationPath, $filename);
             $guru->foto = $filename;
+
+        if ($guru->guru) {
+            $old_cover = $guru->foto;
+            $filepath = public_path() . '/assets/img/guru/' . $guru->foto;
+            try {
+                File::delete($filepath);
+            } catch (FileNotFoundException $e) {
+                //Exception $e;
+            }
+        }
+        $guru->foto = $filename;
         }
 
         $guru->save();

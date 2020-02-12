@@ -80,7 +80,8 @@ class FasilitasController extends Controller
      */
     public function edit($id)
     {
-        //
+        $fasilitas = Fasilitas::findOrFail($id);
+        return view('backend.fasilitas.edit', compact('fasilitas'));
     }
 
     /**
@@ -92,7 +93,35 @@ class FasilitasController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $fasilitas = Fasilitas::findOrFail($id);
+        $fasilitas->foto = $request->foto;
+        $fasilitas->nama_fasilitas = $request->nama_fasilitas;
+
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $destinationPath = public_path() . '/assets/img/fasilitas/';
+            $filename = Str::random(40) . '_' . $file->getClientOriginalName();
+            $uploadSuccess = $file->move($destinationPath, $filename);
+            $guru->foto = $filename;
+
+        if ($guru->guru) {
+            $old_cover = $fasilitas->foto;
+            $filepath = public_path() . '/assets/img/fasilitas/' . $guru->foto;
+            try {
+                File::delete($filepath);
+            } catch (FileNotFoundException $e) {
+                //Exception $e;
+            }
+        }
+        $fasilitas->foto = $filename;
+        }
+
+        $fasilitas->save();
+        Session::flash("flash_notification", [
+            "level" => "success",
+            "message" => "Berhasil menyimpan</b>!"
+        ]);
+        return redirect()->route('fasilitas.index');
     }
 
     /**

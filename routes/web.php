@@ -47,4 +47,5 @@ function () {
     Route::resource('/guru','GuruController');
     Route::resource('/fasilitas','FasilitasController');
     Route::resource('/agenda','AgendaController');
+    Route::resource('/gallery','GalleryController');
 });

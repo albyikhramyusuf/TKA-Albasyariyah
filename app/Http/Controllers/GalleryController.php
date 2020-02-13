@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Gallery;
+use Illuminate\Support\Facades\File;
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
+use Session;
+use Illuminate\Support\Str;
 
 class GalleryController extends Controller
 {
@@ -25,7 +29,8 @@ class GalleryController extends Controller
      */
     public function create()
     {
-        //
+        $gallery = Gallery::all();
+        return view('backend.gallery.create', compact('gallery'));
     }
 
     /**
@@ -36,7 +41,24 @@ class GalleryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $gallery = new Gallery;
+        $gallery->foto = $request->foto;
+        $gallery->nama_gallery = $request->nama_gallery;
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $destinationPath = public_path() . '/assets/img/gallery/';
+            $filename = Str::random(6) . '_' . $file->getClientOriginalName();
+            $upload = $file->move($destinationPath, $filename);
+
+            $gallery->foto = $filename;
+        }
+
+        $gallery->save();
+        Session::flash("flash_notification", [
+            "level" => "success",
+            "message" => "Berhasil menyimpan data guru bernama <b>$gallery->foto</b>!"
+        ]);
+        return redirect()->route('gallery.index');
     }
 
     /**

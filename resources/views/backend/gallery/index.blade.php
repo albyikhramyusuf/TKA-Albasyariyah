@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-12">
             <div class="card">
-                <h5 class="card-header">Data GAllery</h5><br>
+                <h5 class="card-header">Data Gallery</h5><br>
                 <center>
                     <p></p>
                         <a href="{{ route('gallery.create') }}"
@@ -24,13 +24,13 @@
                         <tbody>
                             @foreach ($gallery ?? '' as $data)
                             <tr>
-                                <td><img src="{{asset('assets/img/galllery/' .$data->foto)}}"
+                                <td><img src="{{asset('assets/img/gallery/' .$data->foto)}}"
                                     style="width:50px; height:50px;"></td>
-                                <td>{{$data->nama_galllery}}</td>
+                                <td>{{$data->nama_gallery}}</td>
 
 
 								<td style="text-align: center;">
-                                    <form action="{{route('fasilitas.destroy', $data->id)}}" method="post">
+                                    <form action="{{route('gallery.destroy', $data->id)}}" method="post">
                                         {{csrf_field()}}
 									<a href="{{route('gallery.edit', $data->id)}}"
 										class="zmdi zmdi-edit btn btn-warning btn-rounded btn-floating btn-outline"> Edit

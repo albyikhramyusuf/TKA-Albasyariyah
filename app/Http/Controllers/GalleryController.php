@@ -80,7 +80,8 @@ class GalleryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $gallery = Gallery::findOrFail($id);
+        return view('backend.gallery.edit', compact('gallery'));
     }
 
     /**
@@ -92,7 +93,35 @@ class GalleryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $gallery = Gallery::findOrFail($id);
+        $gallery->foto = $request->foto;
+        $gallery->nama_gallery = $request->nama_gallery;
+
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $destinationPath = public_path() . '/assets/img/gallery/';
+            $filename = Str::random(40) . '_' . $file->getClientOriginalName();
+            $uploadSuccess = $file->move($destinationPath, $filename);
+            $gallery->foto = $filename;
+
+        if ($gallery->gallery) {
+            $old_cover = $gallery->foto;
+            $filepath = public_path() . '/assets/img/gallery/' . $gallery->foto;
+            try {
+                File::delete($filepath);
+            } catch (FileNotFoundException $e) {
+                //Exception $e;
+            }
+        }
+        $gallery->foto = $filename;
+        }
+
+        $gallery->save();
+        Session::flash("flash_notification", [
+            "level" => "success",
+            "message" => "Berhasil menyimpan</b>!"
+        ]);
+        return redirect()->route('gallery.index');
     }
 
     /**
@@ -103,6 +132,11 @@ class GalleryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $gallery = Gallery::findOrfail($id)->delete();
+        Session::flash("flash_notification",[
+             "level" => "Success",
+             "message" => "Berhasil menghapus<b>"
+         ]);
+        return redirect()->route('gallery.index');
     }
 }

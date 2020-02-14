@@ -102,11 +102,11 @@ class FasilitasController extends Controller
             $destinationPath = public_path() . '/assets/img/fasilitas/';
             $filename = Str::random(40) . '_' . $file->getClientOriginalName();
             $uploadSuccess = $file->move($destinationPath, $filename);
-            $guru->foto = $filename;
+            $fasilitas->foto = $filename;
 
-        if ($guru->guru) {
+        if ($fasilitas->fasilitas) {
             $old_cover = $fasilitas->foto;
-            $filepath = public_path() . '/assets/img/fasilitas/' . $guru->foto;
+            $filepath = public_path() . '/assets/img/fasilitas/' . $fasilitas->foto;
             try {
                 File::delete($filepath);
             } catch (FileNotFoundException $e) {

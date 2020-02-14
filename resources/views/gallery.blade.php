@@ -96,12 +96,11 @@
 				<div class="row">
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/image_1.jpg');">
+              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/manasik.jpg');">
 
               </a>
               <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <h3 class="heading"><a href="/frontend/fox/fox/#">Manasik Haji</a></h3>
                 <div class="d-flex align-items-center mt-4">
 
 	                </p>

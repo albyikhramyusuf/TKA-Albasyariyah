@@ -91,34 +91,28 @@
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
       <a class="nav-link" href="{{route('guru.index')}}">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Guru</span>
         </a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="{{route('fasilitas.index')}}" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
+        <a class="nav-link" href="{{route('fasilitas.index')}}">
           <span>Fasilitas</span>
         </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Login Screens:</h6>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/login.html">Login</a>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/register.html">Register</a>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/forgot-password.html">Forgot Password</a>
-          <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Other Pages:</h6>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/404.html">404 Page</a>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/blank.html">Blank Page</a>
-        </div>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('agenda.index')}}">
+              <span>agenda</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="{{route('gallery.index')}}">
+          <span>Gallery</span></a>
+    </li>
+      
+      <li class="nav-item">
         <a class="nav-link" href="{{route('artikel.index')}}">
-          <i class="fas fa-fw fa-chart-area"></i>
           <span>Artikel</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('tag.index')}}">
-          <i class="fas fa-fw fa-table"></i>
           <span>Tag</span></a>
       </li>
     </ul>

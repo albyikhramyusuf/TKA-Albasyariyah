@@ -90,36 +90,32 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
-      <a class="nav-link" href="{{url('/admin')}}">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
+      <a class="nav-link" href="{{route('guru.index')}}">
+
+          <span>Guru</span>
         </a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="/admin/startbootstrap-sb-admin-gh-pages/#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
+        <a class="nav-link"  href="{{route('fasilitas.index')}}">
+         <span>Fasilitas</span>
         </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Login Screens:</h6>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/login.html">Login</a>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/register.html">Register</a>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/forgot-password.html">Forgot Password</a>
-          <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Other Pages:</h6>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/404.html">404 Page</a>
-          <a class="dropdown-item" href="/admin/startbootstrap-sb-admin-gh-pages/blank.html">Blank Page</a>
-        </div>
+
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/admin/startbootstrap-sb-admin-gh-pages/charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
+        <a class="nav-link" href="{{route('gallery.index')}}">
+          <span>Gallery</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/admin/startbootstrap-sb-admin-gh-pages/tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+        <a class="nav-link" href="{{route('agenda.index')}}">
+          <span>Agenda</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('artikel.index')}}">
+          <span>Artikel</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('tag.index')}}">
+          <span>Tag</span></a>
       </li>
     </ul>
 

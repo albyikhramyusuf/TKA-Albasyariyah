@@ -13,7 +13,7 @@ class Agenda extends Migration
      */
     public function up()
     {
-        Schema::create('agenda', function (Blueprint $table) {
+        Schema::create('agendas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('foto');
             $table->string('nama_agenda');

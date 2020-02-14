@@ -8,7 +8,7 @@
                 <h5 class="card-header">Data Agenda</h5><br>
                 <center>
                     <p></p>
-                        <a href="{{ route('Agenda.create') }}"
+                        <a href="{{ route('agenda.create') }}"
                             class="la la-cloud-upload btn btn-info btn-rounded btn-floating btn-outline">&nbsp;Tambah Data
                         </a>
                 </center>

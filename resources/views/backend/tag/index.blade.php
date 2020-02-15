@@ -1,41 +1,52 @@
 @extends('layouts.bakend.index')
-@section('css')
-<link rel="stylesheet" href="{{ asset('assets/backend/assets/vendor/datatables.net-bs4/css/dataTables.bootstrap4.css')}}">
-@endsection
-
-@section('js')
-<script src="{{ asset('assets/backend/assets/vendor/datatables.net/js/jquery.dataTables.js')}}"></script>
-<script src="{{ asset('assets/backend/assets/vendor/datatables.net-bs4/js/dataTables.bootstrap4.js')}}"></script>
-<script src="{{ asset('assets/backend/assets/js/components/datatables-init.js')}}"></script>
-@endsection
 
 @section('content')
-<div class="container tag" id="indexTag">
-    <div class="row justify-content-center">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">
-                    Tag Artikel
-                    <button class="float-right btn btn-primary btn-rounded btn-outline" data-toggle="modal" data-target="#modalTambahTag"><i class="zmdi zmdi-collection-plus zmdi-hc-fw"></i></button>
-                </div>
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header card-header-primary">
+            <h4 class="card-title mt-0"><b>Data Tag</b></h4>
+        </div>
+            <div class="card-body">
+                <center>
+                    <button type="button" title="Tambah Data" class="float-center btn btn-primary btn-rounded btn-outline" data-toggle="modal" data-target=".bd-example-modal-md">
 
-                <div class="card-body">
-                    <br>
-                    <div class="table-responsive">
-                        <table id="datatable-tag" class="table">
-                            <thead>
-                                <tr>
-                                    <th>Nama Tag</th>
-                                    <th>Slug</th>
-                                    <th>Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                        <i class="material-icons"></i> Tambah Data
+                    </button>
+                </center>
+                @include('backend.tag.create')
+            <div class="table-responsive">
+                <table class="table table-hover" id="tab">
+                    <thead class="text-primary">
+                        <tr>
+                            <th class="text-success"><b>No</b></th>
+                            <th class="text-success"><b>Nama Tag</b></th>
+                            <th class="text-success"><b>Slug</b></th>
+                            <th class="text-success"></th>
+                            <th class="text-success"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @php $no =1; @endphp
+                        @foreach($tag as $data)
+                        <tr>
+                            <td style="color: white">{{ $no++ }}</td>
+                            <td style="color: white">{{ $data->nama_tag }}</td>
+                            <td style="color: white">{{ $data->slug }}</td>
+                            <td style="text-align:center">
+                                <button type="button" data-toggle="modal" data-target=".bd-example-modal-md-{{ $data->id }}" class = "btn btn-warning btn-fw btn-rounded btn-outline btn-sm"><i class="material-icons">edit</i> Edit Data</button>
+                            </td>
+                            <td>
+                                <form action="{{ route('tag.destroy', $data->id) }}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button class="btn btn-danger btn-fw btn-sm btn-rounded" type="submit" onclick="return confirm('Apa kamu yakin mau menghapusnya?')"><i class="material-icons">delete</i> Hapus Data</button>
+                                </form>
+                            </td>
+                        </tr>
+                        @include('backend.tag.edit')
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

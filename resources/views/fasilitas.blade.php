@@ -95,12 +95,16 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-3 course ftco-animate">
-						<div class="img" style="background-image: url(/frontend/fox/fox/images/tamanbermain.jpg);"></div>
-						<div class="text pt-4">
+                            @php
+                            $fasilitas = \App\Fasilitas::all();
+                            @endphp
+                            @foreach ($fasilitas as $data)
+                        <img class="img-fluid" style="margin-weight:100px;"  src="{{asset('/assets/img/fasilitas/' .$data->foto )}}" alt="">
+                            @endforeach
+                            <div class="text pt-4">
 							<p class="meta d-flex">
-
 							</p>
-							<h3><a href="/frontend/fox/fox/#">Taman Bermain</a></h3>
+							<h3><a href="/frontend/fox/fox/#">{{ $data->nama_fasilitas }}</a></h3>
 
 
 						</div>

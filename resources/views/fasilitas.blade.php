@@ -99,7 +99,7 @@
                             $fasilitas = \App\Fasilitas::all();
                             @endphp
                             @foreach ($fasilitas as $data)
-                        <img class="img-fluid" style="margin-weight:100px;"  src="{{asset('/assets/img/fasilitas/' .$data->foto )}}" alt="">
+                        <img class="img-fluid" style="margin-weight:150px;"  src="{{asset('/assets/img/fasilitas/' .$data->foto )}}" alt="">
                             @endforeach
                             <div class="text pt-4">
 							<p class="meta d-flex">

@@ -93,24 +93,28 @@
 
 		<section class="ftco-section bg-light">
 			<div class="container">
-				<div class="row">
+             @php
+                $gallery = \App\Gallery::all();
+            @endphp
+		<div class="row">
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/manasik.jpg');">
+                @foreach ($gallery as $data)
+            <img class="img-fluid" style="margin-weight:150px;"  src="{{asset('/assets/img/gallery/' .$data->foto )}}" alt="">
 
               </a>
               <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Manasik Haji</a></h3>
+                <h3><a href="/frontend/fox/fox/#">{{ $data->nama_gallery }}</a></h3>
                 <div class="d-flex align-items-center mt-4">
-
 	                </p>
                 </div>
               </div>
             </div>
+            @endforeach
           </div>
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/image_2.jpg');">
+              {{-- <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/image_2.jpg');"> --}}
 
               </a>
               <div class="text bg-white p-4">

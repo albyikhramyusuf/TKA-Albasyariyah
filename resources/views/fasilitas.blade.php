@@ -94,51 +94,20 @@
     <section class="ftco-section">
 			<div class="container-fluid">
 				<div class="row">
+                    @php
+                    $fasilitas = \App\Fasilitas::all();
+                    @endphp
+                    @foreach ($fasilitas as $data)
 					<div class="col-md-3 course ftco-animate">
-                            @php
-                            $fasilitas = \App\Fasilitas::all();
-                            @endphp
-                            @foreach ($fasilitas as $data)
                         <img class="img-fluid" style="margin-weight:150px;"  src="{{asset('/assets/img/fasilitas/' .$data->foto )}}" alt="">
-                            @endforeach
-                            <div class="text pt-4">
-							<p class="meta d-flex">
-							</p>
+                        <div class="text pt-4">
+                            <p class="meta d-flex">
+                            </p>
 							<h3><a href="/frontend/fox/fox/#">{{ $data->nama_fasilitas }}</a></h3>
-
-
 						</div>
 					</div>
-					<div class="col-md-3 course ftco-animate">
-						<div class="img" style="background-image: url(/frontend/fox/fox/images/mesjid.jpg);"></div>
-						<div class="text pt-4">
-							<p class="meta d-flex">
-							</p>
-							<h3><a href="/frontend/fox/fox/#">Mesjid</a></h3>
+                    @endforeach
 
-
-						</div>
-					</div>
-					<div class="col-md-3 course ftco-animate">
-						<div class="img" style="background-image: url(/frontend/fox/fox/images/perpustakaan.jpg);"></div>
-						<div class="text pt-4">
-							<p class="meta d-flex">
-							</p>
-							<h3><a href="/frontend/fox/fox/#">Perpustakaan</a></h3>
-
-
-						</div>
-					</div>
-					<div class="col-md-3 course ftco-animate">
-						<div class="img" style="background-image: url(/frontend/fox/fox/images/aula.jpg);"></div>
-						<div class="text pt-4">
-							<p class="meta d-flex">
-							</p>
-							<h3><a href="/frontend/fox/fox/#">Aula</a></h3>
-
-
-						</div>
-                    </div>
 				</div>
 
 

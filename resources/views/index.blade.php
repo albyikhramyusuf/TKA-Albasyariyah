@@ -62,12 +62,12 @@
         </form>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="{{url('Home')}}" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item active"><a href="{{url('/')}}" class="nav-link pl-0">Home</a></li>
             <li class="nav-item"><a href="{{url('profil')}}" class="nav-link">Profil</a></li>
 	        	<li class="nav-item"><a href="{{url('Fasilitas')}}" class="nav-link">Fasilitas</a></li>
 	        	<li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBR0QXfetxdBvFlR-Y6JSwzdj6GPxL4FoDdluIROlSeLIsOQ/viewform?usp=sf_link" class="nav-link">Pendaftaran</a></li>
-	        	<li class="nav-item"><a href="/frontend/fox/fox/Gallery.html" class="nav-link">gallery</a></li>
-	          <li class="nav-item"><a href="/frontend/fox/fox/contact.html" class="nav-link">Contact</a></li>
+	        	<li class="nav-item"><a href="{{url('Gallery')}}" class="nav-link">gallery</a></li>
+	          <li class="nav-item"><a href="{{url('Contact')}}" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>

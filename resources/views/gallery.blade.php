@@ -97,99 +97,23 @@
                 $gallery = \App\Gallery::all();
             @endphp
 		<div class="row">
+            @foreach ($gallery as $data)
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-                @foreach ($gallery as $data)
             <img class="img-fluid" style="margin-weight:150px;"  src="{{asset('/assets/img/gallery/' .$data->foto )}}" alt="">
 
               </a>
               <div class="text bg-white p-4">
-                <h3><a href="/frontend/fox/fox/#">{{ $data->nama_gallery }}</a></h3>
+                <h3><a href="" style="color:black;">{{ $data->nama_gallery }}</a></h3>
                 <div class="d-flex align-items-center mt-4">
 	                </p>
                 </div>
               </div>
             </div>
-            @endforeach
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              {{-- <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/image_2.jpg');"> --}}
-
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/image_3.jpg');">
-
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/image_4.jpg');">
-
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/image_5.jpg');">
-
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="/frontend/fox/fox/blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('/frontend/fox/fox/images/image_6.jpg');">
-
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="/frontend/fox/fox/#">Skills To Develop Your Child Memory</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-			</div>
+        @endforeach
+    </div>
+        </div>
 		</section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">

@@ -168,79 +168,24 @@
           </div>
         </div>
 				<div class="row">
+                    @php
+                        $guru = \App\Guru::all();
+                    @endphp
+                    @foreach($guru as $data)
 					<div class="col-md-6 col-lg-3 ftco-ani mate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
 								<div class="img align-self-stretch" style="background-image: url(/frontend/fox/fox/images/guru.jpg);"></div>
 							</div>
 							<div class="text pt-3 text-center">
-								<h3>Bu Saidah</h3>
-								<span class="position mb-2">Guru BTQ</span>
+                            <h3>{{ $data->nama_guru}}</h3>
+                            <span class="position mb-2">{{ $data->jabatan }}</span>
 								<div class="faded">
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-instagram"></span></a></li>
-		              </ul>
+                    @endforeach
 	              </div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(/frontend/fox/fox/images/guru2.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Pa Doni</h3>
-								<span class="position mb-2">Guru Bahasa Arab</span>
-								<div class="faded">
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(/frontend/fox/fox/images/guru4.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Bu Imas</h3>
-								<span class="position mb-2">Guru Senam</span>
-								<div class="faded">
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(/frontend/fox/fox/images/guru3.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Bu Entin</h3>
-								<span class="position mb-2">Guru</span>
-								<div class="faded">
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="/frontend/fox/fox/#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
 							</div>
 						</div>
 					</div>

@@ -27,10 +27,6 @@ Route::get('/gallery', function () {
     return view('gallery');
 });
 
-Route::get('/pendaftaran', function () {
-    return view('pendaftaran');
-});
-
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -52,4 +48,5 @@ function () {
     Route::resource('/fasilitas','FasilitasController');
     Route::resource('/agenda','AgendaController');
     Route::resource('/gallery','GalleryController');
+    Route::resource('/Pendaftaran','PendaftaranController');
 });

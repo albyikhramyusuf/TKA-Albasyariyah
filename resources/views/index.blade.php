@@ -65,7 +65,7 @@
 	        	<li class="nav-item active"><a href="{{url('/')}}" class="nav-link pl-0">Home</a></li>
             <li class="nav-item"><a href="{{url('profil')}}" class="nav-link">Profil</a></li>
 	        	<li class="nav-item"><a href="{{url('Fasilitas')}}" class="nav-link">Fasilitas</a></li>
-	        	<li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBR0QXfetxdBvFlR-Y6JSwzdj6GPxL4FoDdluIROlSeLIsOQ/viewform?usp=sf_link" class="nav-link">Pendaftaran</a></li>
+	        	<li class="nav-item"><a href="{{url('pendaftaran')}}" class="nav-link">Pendaftaran</a></li>
 	        	<li class="nav-item"><a href="{{url('Gallery')}}" class="nav-link">gallery</a></li>
 	          <li class="nav-item"><a href="{{url('Contact')}}" class="nav-link">Contact</a></li>
 	        </ul>
@@ -175,18 +175,16 @@
 					<div class="col-md-6 col-lg-3 ftco-ani mate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(/frontend/fox/fox/images/guru.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url({{asset('/assets/img/guru/' .$data->foto )}});"></div>
 							</div>
 							<div class="text pt-3 text-center">
                             <h3>{{ $data->nama_guru}}</h3>
                             <span class="position mb-2">{{ $data->jabatan }}</span>
-								<div class="faded">
-                    @endforeach
-	              </div>
 							</div>
 						</div>
-					</div>
-							</div>
+                    </div>
+                    @endforeach
+				</div>
 						</div>
 					</div>
 				</div>

@@ -31,6 +31,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/pendaftaran', function () {
+    return view('pendaftaran');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -48,5 +52,4 @@ function () {
     Route::resource('/fasilitas','FasilitasController');
     Route::resource('/agenda','AgendaController');
     Route::resource('/gallery','GalleryController');
-    Route::resource('/Pendaftaran','PendaftaranController');
 });

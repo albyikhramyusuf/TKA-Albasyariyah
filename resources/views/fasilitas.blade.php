@@ -27,7 +27,7 @@
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
-    				<img src="/frontend/fox/fox/images/LogoTKA.jpg" alt="" height="100px">
+    				<img src="/frontend/fox/fox/images/LogoTKA.jpg" alt="" height="130px">
     			</div>
 	    		<div class="col-lg-8 d-block">
 		    		<div class="row d-flex">
@@ -70,7 +70,7 @@
 	        	<li class="nav-item"><a href="{{url('/')}}" class="nav-link pl-0">Home</a></li>
 	        	<li class="nav-item"><a href="{{url('/profil')}}" class="nav-link">Profil</a></li>
 	        	<li class="nav-item"><a href="{{url('/fasilitas')}}" class="nav-link">Fasilitas</a></li>
-	        	<li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBR0QXfetxdBvFlR-Y6JSwzdj6GPxL4FoDdluIROlSeLIsOQ/viewform?usp=sf_link" class="nav-link">Pendaftaran</a></li>
+	        	<li class="nav-item"><a href="{{url('/Pendaftaran)}}" class="nav-link">Pendaftaran</a></li>
 	        	<li class="nav-item"><a href="{{url('/gallery')}}" class="nav-link">Gallery</a></li>
 	          <li class="nav-item"><a href="{{url('/contact')}}" class="nav-link">Contact</a></li>
 	        </ul>

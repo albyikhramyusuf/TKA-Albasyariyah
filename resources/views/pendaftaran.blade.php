@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TK AL BASYARIYAH</title>
+    <title>TKA AL BASYARIYAH</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -27,7 +27,7 @@
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
-                        <img src="/frontend/fox/fox/images/LogoTKA.jpg" alt="" height="130px">
+    				<a class="navbar-brand" href="/frontend/fox/fox/index.html">Fox. <span>University</span></a>
     			</div>
 	    		<div class="col-lg-8 d-block">
 		    		<div class="row d-flex">
@@ -45,7 +45,10 @@
 						    	<span>Call Us: + 1235 2355 98</span>
 						    </div>
 					    </div>
-
+					    <div class="col-md topper d-flex align-items-center justify-content-end">
+					    	<p class="mb-0">
+					    		<a href="/frontend/fox/fox/#" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
+					    			<span>Apply now</span>
 					    		</a>
 					    	</p>
 					    </div>
@@ -68,90 +71,67 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
 	        	<li class="nav-item"><a href="{{url('/')}}" class="nav-link pl-0">Home</a></li>
-	        	<li class="nav-item"><a href="{{url('/profil')}}" class="nav-link">Frofil</a></li>
-	        	<li class="nav-item"><a href="{{url('/fasilitas')}}" class="nav-link">Fasilitas</a></li>
-	        	<li class="nav-item"><a href="{{url('/Pendaftran')}}" class="nav-link">Pendaftaran</a></li>
-	        	<li class="nav-item"><a href="{{url('/gallery')}}" class="nav-link">Gallery</a></li>
-	          <li class="nav-item active"><a href="{{url('/contact')}}" class="nav-link">Contact</a></li>
+	        	<li class="nav-item"><a href="{{url('/Profil')}}" class="nav-link">Profil</a></li>
+	        	<li class="nav-item"><a href="{{url('/Fasilitas')}}" class="nav-link">Fasilitas</a></li>
+	        	<li class="nav-item"><a href="{{url('/Pendaftaran')}}" class="nav-link">Pendaftaran</a></li>
+	        	<li class="nav-item"><a href="{{url('/Gallery')}}" class="nav-link">Gallery</></a>
+	          <li class="nav-item"><a href="{{url('/Contact')}}" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('/frontend/fox/fox/images/tka.jpg');">
-
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
+      <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread" style="color:black">Contact Us</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="/frontend/fox/fox/index.html" style="color:black">Home <i class="ion-ios-arrow-forward"></i></a></span> <span style="color:black">Contact <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-2 bread">Blog Single</h1>
+             <p class="breadcrumbs"><span class="mr-2"><a href="/frontend/fox/fox/index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="/frontend/fox/fox/index.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog Single <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ftco-section contact-section">
-      <div class="container">
-        <div class="row d-flex contact-info">
-          <div class="col-md-3 d-flex">
-          	<div class="bg-light align-self-stretch box p-4 text-center">
-          		<h3 class="mb-4">Address</h3>
-	            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="bg-light align-self-stretch box p-4 text-center">
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="/frontend/fox/fox/tel://1234567920">+ 1235 2355 98</a></p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="bg-light align-self-stretch box p-4 text-center">
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="/frontend/fox/fox/mailto:info@yoursite.com">info@yoursite.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="bg-light align-self-stretch box p-4 text-center">
-          		<h3 class="mb-4">Website</h3>
-	            <p><a href="/frontend/fox/fox/#">yoursite.com</a></p>
-	          </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <body>
+        {{-- <form action="{{ route('pendaftaran.store') }}" method="post"> --}}
+            <center>
+            <table>
+                <tr><td> NO PENDAFTARAN </td>
+                <td><input type="text" name="no_pendaftaran" placeholder="NO PENDAFTARAN"></td></tr>
 
-		<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
-			<div class="container">
-				<div class="row d-flex align-items-stretch no-gutters">
-					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
-						<form action="#">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-					</div>
-					<div class="col-md-6 d-flex align-items-stretch">
-						<div id="map"></div>
-					</div>
-				</div>
-			</div>
-		</section>
+                <tr><td> NAMA</td>
+                <td><input type="text" name="nama" placeholder="NAMA" /></td></tr>
+                <tr><td> ALAMAT</td>
+                <td><input type="text" name="alamat" placeholder="ALAMAT" /></td></tr>
+                <tr><td> TEMPAT LAHIR</td>
+                <td><input type="text" name="tempat_lahir" placeholder="TEMPAT LAHIR" /></td></tr>
+                <tr><td> TANGGAL LAHIR</td>
+                <td><input type="date" name="tgl_lahir"  placeholder="TANGGAL LAHIR" /></td></tr>
 
+                <tr><td> JENIS KELAMIN</td>
+                <td><input type="radio" name="jns_kelamin" value="L"> LAKI-LAKI <br>
+                 <input type="radio" name="jns_kelamin" value="P"> PEREMPUAN </td></tr>
+                <tr><td> NAMA AYAH</td>
+                <td><input type="text" name="nama_ayah"  placeholder="NAMA AYAH" /></td></tr>
+                <tr><td> PEKERJAAN AYAH</td>
+                <td><input type="text" name="pekerjaan_ayah"  placeholder="PEKERJAAN AYAH" /></td></tr>
+                <tr><td> NAMA IBU</td>
+                <td><input type="text" name="nama_ibu" placeholder="NAMA IBU" /></td></tr>
+                <tr><td> PEKERJAAAN IBU</td>
+                <td><input type="text" name="pekerjaan_ibu" placeholder="PEKERJAAN IBU" /></td></tr>
 
+                <tr><td> FOTO </td>
+                <td><input type="file" name="image" />
+                <tr> <td></td>
+
+                <td><input type="submit" value="simpan"></input><input type="reset" value="kembali"></input></td></tr>
+                </form>
+            </table>
+            </center>
+
+        </body>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -172,7 +152,7 @@
             <div class="ftco-footer-widget mb-5">
               <h2 class="ftco-heading-2">Recent Blog</h2>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(/frontend/fox/fox/images/image_1.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="/frontend/fox/fox/#">Even the all-powerful Pointing has no control about</a></h3>
                   <div class="meta">
@@ -183,7 +163,7 @@
                 </div>
               </div>
               <div class="block-21 mb-5 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(/frontend/fox/fox/images/image_2.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="/frontend/fox/fox/#">Even the all-powerful Pointing has no control about</a></h3>
                   <div class="meta">

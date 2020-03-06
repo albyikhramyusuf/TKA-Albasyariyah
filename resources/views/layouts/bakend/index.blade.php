@@ -106,15 +106,6 @@
         <a class="nav-link" href="{{route('gallery.index')}}">
           <span>Gallery</span></a>
     </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="{{route('artikel.index')}}">
-          <span>Artikel</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{route('tag.index')}}">
-          <span>Tag</span></a>
-      </li>
     </ul>
 
     <div id="content-wrapper">
